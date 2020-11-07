@@ -17,3 +17,27 @@ $(document).ready(function () {
     return false;
   });
 });
+
+const hidden = document.getElementsByClassName("hidden");
+
+for (var i = 0; i < hidden.length; i++) {
+  hidden[i].style.display = "none";
+}
+
+const readMore = document.getElementById("readMore");
+readMore.onclick = function () {
+  for (var i = 0; i < hidden.length; i++) {
+    hidden[i].style.display = "block";
+  }
+
+  readMore.style.display = "none";
+};
+$("#readMore").click(function () {
+  $("body,html").animate(
+    {
+      scrollTop: 600,
+    },
+    400
+  );
+  return false;
+});
