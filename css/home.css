@@ -1,0 +1,42 @@
+span.material-icons {
+  padding: 0;
+  margin: 0;
+  font-size: 25px;
+}
+.cap-bg {
+  background-color: rgba(34, 34, 34, 0.651);
+}
+
+.form-control {
+  border-radius: 25px;
+}
+button.btn {
+  border-radius: 25px;
+}
+span.material-icons.star {
+  font-size: 15px;
+}
+.break {
+  display: none;
+}
+
+.newsLetter {
+  display: table;
+  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  background-color: #efefef;
+}
+.newsLetterCell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 991px) {
+  .break {
+    display: block;
+  }
+  h5.popPost {
+    margin-top: 2.5em;
+  }
+}
