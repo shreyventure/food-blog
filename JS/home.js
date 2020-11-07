@@ -19,6 +19,7 @@ $(document).ready(function () {
 });
 
 const hidden = document.getElementsByClassName("hidden");
+const readParent = document.getElementById("readParent");
 
 for (var i = 0; i < hidden.length; i++) {
   hidden[i].style.display = "none";
@@ -30,9 +31,25 @@ readMore.onclick = function () {
     hidden[i].style.display = "block";
   }
 
-  readMore.style.display = "none";
+  readParent.style.display = "none";
 };
 $("#readMore").click(function () {
+  $("body,html").animate(
+    {
+      scrollTop: 600,
+    },
+    400
+  );
+  return false;
+});
+const readLess = document.getElementById("readLess");
+readLess.onclick = function () {
+  for (var i = 0; i < hidden.length; i++) {
+    hidden[i].style.display = "none";
+  }
+  readParent.style.display = "block";
+};
+$("#readLess").click(function () {
   $("body,html").animate(
     {
       scrollTop: 600,
