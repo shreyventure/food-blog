@@ -17,3 +17,13 @@ $(document).ready(function () {
     return false;
   });
 });
+
+const subscribe = document.getElementById("subscribe");
+const subscribed = document.getElementById("subscribed");
+subscribe.onclick = () => {
+  subscribe.innerText = "Subscribed !";
+  subscribed.style.display = "block";
+  setTimeout(() => {
+    subscribed.style.display = "none";
+  }, 4000);
+};
