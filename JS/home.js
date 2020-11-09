@@ -36,7 +36,7 @@ readMore.onclick = function () {
 $("#readMore").click(function () {
   $("body,html").animate(
     {
-      scrollTop: 670,
+      scrollTop: 745,
     },
     400
   );
@@ -52,7 +52,7 @@ readLess.onclick = function () {
 $("#readLess").click(function () {
   $("body,html").animate(
     {
-      scrollTop: 670,
+      scrollTop: 745,
     },
     400
   );
