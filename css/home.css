@@ -40,6 +40,18 @@ a.btn.btn-dark.back-to-top {
   display: none;
 }
 
+i.fab {
+  font-size: 17px;
+}
+
+.brands a {
+  margin: 0 5px;
+  text-decoration: none;
+}
+.brands a:hover {
+  opacity: 0.5;
+}
+
 @media only screen and (max-width: 991px) {
   .break {
     display: block;
