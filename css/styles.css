@@ -101,11 +101,28 @@ img.border-round {
   border-radius: 50%;
 }
 
+img.originalLogo {
+  width: 22vw;
+  min-width: 200px;
+}
+
+.map-container-section {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.map-container-section iframe {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
 @media only screen and (max-width: 991px) {
   .break {
     display: block;
   }
-  h5.popPost {
+  .popPost {
     margin-top: 2.5em;
   }
 }
