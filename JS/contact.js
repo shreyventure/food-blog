@@ -88,4 +88,9 @@ contactForm.onsubmit = (e) => {
     alert[1].style.display = "none";
     alert[1].innerText = "";
   }, 4000);
+
+  firstName.value = "";
+  lastName.value = "";
+  email.value = "";
+  message.value = "";
 };
